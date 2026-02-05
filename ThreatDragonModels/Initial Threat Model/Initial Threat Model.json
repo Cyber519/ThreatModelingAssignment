@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 370,
-              "y": 30
+              "x": 270,
+              "y": 10
             },
             "size": {
               "width": 112.5,
@@ -28,7 +28,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Actor (Browser)"
+                "text": "Actor: Browser (User)"
               },
               "body": {
                 "stroke": "red",
@@ -104,28 +104,28 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "2ca19a42-9f49-49c1-94eb-74437ef1b08f"
+                  "id": "5e63b293-3645-4ad1-b82d-6051958d3dbe"
                 },
                 {
                   "group": "right",
-                  "id": "8b29eb95-9b36-4d36-9431-9dcc7e693d1d"
+                  "id": "178791cc-366a-4a26-aeff-4291fef548d6"
                 },
                 {
                   "group": "bottom",
-                  "id": "7429d31b-606f-4649-a50c-b1e56886c773"
+                  "id": "02682582-2f42-4ccc-a3e8-f0a80e41a9fc"
                 },
                 {
                   "group": "left",
-                  "id": "47891ef2-8f38-465f-a95f-71638e2dde5c"
+                  "id": "190c0df7-a3db-4d67-8cbb-d6536d9d9774"
                 }
               ]
             },
-            "id": "adff16fb-f02d-47f2-a121-04116c7cd502",
+            "id": "d04457b3-64da-4e14-bac9-b3449b6d3c99",
             "zIndex": 1,
             "data": {
               "type": "tm.Actor",
-              "name": "Actor (Browser)",
-              "description": "Browser",
+              "name": "Actor: Browser (User)",
+              "description": "",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -133,37 +133,37 @@
               "providesAuthentication": false,
               "threats": [
                 {
-                  "id": "c0d5edb2-a19d-44ab-8f13-a06b6a7479b4",
-                  "title": "Actor - Browser (Client)",
+                  "id": "ab5d6e70-4e6a-4473-9b06-faed9804913e",
+                  "title": "Actor - Browser (User) STRIDE Threats for Each Component",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "An attacker may impersonate a legitimate user by stealing credentials or session tokens.\nTampering - Malicious browser extensions or compromised client devices could alter form data before submission.\nRepudiation - Users may deny submitting comments or login attempts if proper logging isn't enforced.\nInformation Disclosure - Sensitive data (credentials, MotD, comments) could be exposed if transmitted without TLS\nDenial of Service - Automated bots could flood the login page, overwhelming the application.\nElevation of Privilege - If session tokens are predictable or poorly protected, attackers could escalate privileges.",
-                  "mitigation": "N/A",
+                  "description": "S - Attackers impersonate a legitimate user by stealing credentials or session cookies.\nT - Malicious extensions or compromised devices alter form data before submission.\nR - User denies submitting comments or login attempts if logs are insufficient\nI - Credentials or comments exposed if TLS isn't enforced.\nD - Automated bots flood login requests.\nE - Session hijacking or token theft allows privilege escalation.",
+                  "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 1,
+                  "number": 21,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 1,
                 "repudiation": 0
               }
             }
           },
           {
             "position": {
-              "x": 396.25,
-              "y": 90
+              "x": 281.25,
+              "y": 70
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 90,
+              "height": 90
             },
             "attrs": {
               "text": {
-                "text": "Process (web app)"
+                "text": "Process: Web Application"
               },
               "body": {
                 "stroke": "red",
@@ -239,138 +239,73 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "df6c7ee8-6c3a-4802-a3b8-90bc8d26bdf8"
+                  "id": "91215df2-5e49-41f4-8995-29574f4ff451"
                 },
                 {
                   "group": "right",
-                  "id": "b4c9cd92-caf7-4d58-9df8-7cd55f57669b"
+                  "id": "753ba8ba-9181-4a84-811c-8e39497a081b"
                 },
                 {
                   "group": "bottom",
-                  "id": "b1a14271-3273-4720-8ae1-239ac51aeea2"
+                  "id": "ae205ca9-5f17-4b8b-a3e7-6896103f9136"
                 },
                 {
                   "group": "left",
-                  "id": "a80aa671-05ad-49c9-a50c-5592402eac48"
+                  "id": "7004cdab-58fb-46b3-b9b0-03214e861193"
                 }
               ]
             },
-            "id": "72054cfe-74d3-4849-9f6d-9775e71556d3",
+            "id": "f0fab080-ca89-4159-860c-6f4e35368a4f",
             "zIndex": 2,
             "data": {
               "type": "tm.Process",
-              "name": "Process (web app)",
-              "description": "web app",
+              "name": "Process: Web Application",
+              "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
-              "isWebApplication": false,
+              "isWebApplication": true,
               "privilegeLevel": "",
               "threats": [
                 {
-                  "id": "d3686699-1876-4f67-a4a8-9d2751d0d548",
-                  "title": "Process",
+                  "id": "5187e3e0-0780-408a-911a-a75b2f0b37b4",
+                  "title": "Process: Web APP STRIDE",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "Weak session management may allow attackers to impersonate authenticated users.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 4,
-                  "score": ""
-                },
-                {
-                  "id": "62f2f47e-5492-4e1b-b6cf-899bc1af6a2b",
-                  "title": "Process",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Manipulation of request parameters (e.g., comment text, user IDs) if input validation is weak.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 5,
-                  "score": ""
-                },
-                {
-                  "id": "70b6ddb3-2700-43fa-825e-ca547219a1b9",
-                  "title": "Process",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation",
-                  "description": "Insufficient logging may allow attackers to deny malicious actions.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 6,
-                  "score": ""
-                },
-                {
-                  "id": "3cb3bb23-3370-4518-8f47-0c44f2fc6641",
-                  "title": "Process",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Insufficient logging may allow attackers to deny malicious actions",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 7,
-                  "score": ""
-                },
-                {
-                  "id": "d2aea3ea-b2f0-4fa9-81c2-98e15d2005ed",
-                  "title": "Process",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service",
-                  "description": "High volumes of login or comment requests could exhaust server resources.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 8,
-                  "score": ""
-                },
-                {
-                  "id": "2512b7f8-3629-48aa-91ee-0f02c6327698",
-                  "title": "Process",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Elevation of privilege",
-                  "description": "Vulnerabilities in the app logic could allow bypassing authorization checks.",
+                  "description": "S - Weak session management allows impersonation.\nT - Manipulated request parameters.\nR - Missing or weak logging allows denial of actions.\nI - Verbose error message leaks internal details.\nD - Excessive login or comment requests overwhelm the server\nE - Logic flaws allow bypassing authorization checks.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 9,
+                  "number": 22,
                   "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "tampering": 1,
-                "repudiation": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1,
-                "elevationOfPrivilege": 1
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
               }
             }
           },
           {
             "position": {
-              "x": 396.25,
-              "y": 150
+              "x": 271.25,
+              "y": 160
             },
             "size": {
-              "width": 60,
-              "height": 60
+              "width": 110,
+              "height": 100
             },
             "attrs": {
               "text": {
-                "text": "Process (open source auth component)"
+                "text": "Process - Open-Source Auth Component"
               },
               "body": {
                 "stroke": "red",
@@ -446,28 +381,28 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "df6c7ee8-6c3a-4802-a3b8-90bc8d26bdf8"
+                  "id": "91215df2-5e49-41f4-8995-29574f4ff451"
                 },
                 {
                   "group": "right",
-                  "id": "b4c9cd92-caf7-4d58-9df8-7cd55f57669b"
+                  "id": "753ba8ba-9181-4a84-811c-8e39497a081b"
                 },
                 {
                   "group": "bottom",
-                  "id": "b1a14271-3273-4720-8ae1-239ac51aeea2"
+                  "id": "ae205ca9-5f17-4b8b-a3e7-6896103f9136"
                 },
                 {
                   "group": "left",
-                  "id": "a80aa671-05ad-49c9-a50c-5592402eac48"
+                  "id": "7004cdab-58fb-46b3-b9b0-03214e861193"
                 }
               ]
             },
-            "id": "f5661b29-d0d0-4868-bbce-59156bf399b4",
+            "id": "693b972e-ad4c-4551-aec3-40c01dbcf2f7",
             "zIndex": 3,
             "data": {
               "type": "tm.Process",
-              "name": "Process (open source auth component)",
-              "description": "open source auth component",
+              "name": "Process - Open-Source Auth Component",
+              "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -478,106 +413,41 @@
               "privilegeLevel": "",
               "threats": [
                 {
-                  "id": "518c83ab-3d1a-4d87-b674-0b62aaa677f5",
-                  "title": "Process 2",
+                  "id": "fbb04163-ec10-4755-8eb5-e5041f0fbc62",
+                  "title": "Process - Open-Source Authentication Component",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
-                  "description": "Vulnerabilities in the library could allow bypassing authentication or forging tokens.",
+                  "description": "S - Vulnerabilities allow bypassing authentication or forging tokens.\nT - Manipulated authentication responses or insecure integration.\nR - Lack of authentication event logging.\nI - Misconfiguration leaks password hashes or user data.\nD - Expensive hashing operations are abused to overload the component.\nE - Exploiting library flaws grants unauthorized access.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 10,
-                  "score": ""
-                },
-                {
-                  "id": "f6701bd8-0acc-4029-bfe7-7f7848216992",
-                  "title": "Process 2",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Tampering",
-                  "description": "Attackers may exploit insecure integration to modify authentication requests or responses.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 11,
-                  "score": ""
-                },
-                {
-                  "id": "557fc446-d0c3-4ede-b307-6a74f0c98154",
-                  "title": "Process 2",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation",
-                  "description": "If the component doesn't log authentication events, users can deny login attempts.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 12,
-                  "score": ""
-                },
-                {
-                  "id": "2aa6521f-9d93-4a4c-a731-9af9648c38ff",
-                  "title": "Process 2",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Misconfigured authentication modules may leak password hashes or user data.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 13,
-                  "score": ""
-                },
-                {
-                  "id": "16438a31-c2ca-4b6d-add1-86cac67e3658",
-                  "title": "Process 2",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service",
-                  "description": "Authentication routines (e.g., hashing) can be abused to overload the component.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 14,
-                  "score": ""
-                },
-                {
-                  "id": "ba4ca4d2-d352-44ce-a362-177489994240",
-                  "title": "Process 2",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Elevation of privilege",
-                  "description": "Exploiting flaws in the library could grant unauthorized access or admin privileges.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 15,
+                  "number": 23,
                   "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
-                "tampering": 1,
-                "repudiation": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1,
-                "elevationOfPrivilege": 1
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
               }
             }
           },
           {
             "position": {
-              "x": 366.25,
-              "y": 210
+              "x": 251.25,
+              "y": 260
             },
             "size": {
-              "width": 120,
-              "height": 60
+              "width": 150,
+              "height": 80
             },
             "attrs": {
               "text": {
-                "text": "Data store (database)"
+                "text": "Data Store - Database"
               },
               "topLine": {
                 "stroke": "red",
@@ -658,28 +528,28 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "9cc1daa5-e39f-458c-b34c-40e5c4d66a2a"
+                  "id": "792135a5-1647-4ec6-a214-2a016237bd53"
                 },
                 {
                   "group": "right",
-                  "id": "01d4dad9-03eb-400c-951b-281617fa3684"
+                  "id": "201cadd1-b63d-45af-b826-84e34a5a2d03"
                 },
                 {
                   "group": "bottom",
-                  "id": "dcdb1eab-fcd0-4877-ba9f-920cce61c70e"
+                  "id": "33e62902-4c3e-4056-8793-0725f0c6ef6f"
                 },
                 {
                   "group": "left",
-                  "id": "d588e0e8-a6f9-4bda-93c9-1d474756f536"
+                  "id": "10b5d3ea-21f4-4aff-b787-b822c7138aca"
                 }
               ]
             },
-            "id": "78ccde80-367c-41b2-ad95-75c9639d3598",
+            "id": "82c77bac-0d78-404e-82b0-4bf24e3d6b0e",
             "zIndex": 4,
             "data": {
               "type": "tm.Store",
-              "name": "Data store (database)",
-              "description": "database",
+              "name": "Data Store - Database",
+              "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -691,63 +561,24 @@
               "storesInventory": false,
               "threats": [
                 {
-                  "id": "6b967d00-ceb0-4916-9817-3dee997c8a55",
-                  "title": "Data Store",
+                  "id": "65284019-8d23-43e1-8185-ab0232441566",
+                  "title": "Data Store - Database STRIDE",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "SQL injection or direct DB access could modify MotD or comments.",
+                  "description": "S - Attacker impersonates the application if DB credentials leak.\nT - SQL injection modifies MotD or comments.\nR - No audit logs for DB changes.\nI - Unauthorized access exposes stored comments or credential hashes.\nD - Malformed queries lock tables or exhaust resources.\nE - Misconfigurations allow admin-level access.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 16,
-                  "score": ""
-                },
-                {
-                  "id": "4fbae701-964d-4f13-bd6c-e382ed189b63",
-                  "title": "Data Store",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation",
-                  "description": "Without audit tables or logs, malicious changes cannot be traced",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 17,
-                  "score": ""
-                },
-                {
-                  "id": "4880ad08-bc67-4b36-b31c-f13ca73d4312",
-                  "title": "Data Store",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Unauthorized access could expose stored comments, MotD, or credential hashes.",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 18,
-                  "score": ""
-                },
-                {
-                  "id": "22c2b1b8-2ca8-4951-bf07-2a422848ed25",
-                  "title": "Data Store",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service",
-                  "description": "Large or malformed queries could lock tables or exhaust DB resources",
-                  "mitigation": "",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 19,
+                  "number": 24,
                   "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
-                "repudiation": 1,
-                "informationDisclosure": 1,
-                "denialOfService": 1
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
               }
             }
           },
@@ -771,8 +602,8 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow (login, auth check, MotD retrieval, comment submission)",
-              "description": "Login, Auth Check, MotD retrieval,  comment submission",
+              "name": "Data Flow",
+              "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -785,21 +616,29 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow (login, auth check, MotD retrieval, comment submission)"
+              "Data Flow"
             ],
-            "id": "93e5ffa2-5d50-4026-902c-32902016de04",
+            "id": "02c494a4-3c93-4aef-9f3f-e2956bba62d7",
             "source": {
-              "x": 483,
-              "y": 375
+              "cell": "d04457b3-64da-4e14-bac9-b3449b6d3c99",
+              "port": "190c0df7-a3db-4d67-8cbb-d6536d9d9774"
             },
             "target": {
-              "x": 583,
-              "y": 475
+              "cell": "82c77bac-0d78-404e-82b0-4bf24e3d6b0e",
+              "port": "10b5d3ea-21f4-4aff-b787-b822c7138aca"
             },
             "vertices": [
               {
-                "x": 510,
-                "y": 375
+                "x": 130,
+                "y": -19
+              },
+              {
+                "x": 100,
+                "y": 60
+              },
+              {
+                "x": 150,
+                "y": 280
               }
             ]
           },
@@ -812,7 +651,7 @@
             "data": {
               "type": "tm.Boundary",
               "name": "Trust Boundary",
-              "description": "f",
+              "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [],
@@ -821,27 +660,23 @@
             "labels": [
               "Trust Boundary"
             ],
-            "id": "548132ae-b9dc-4477-a5c2-1503ea987918",
+            "id": "6f1f510e-e8ad-49f4-aaf6-c9a5b8aaa983",
             "source": {
-              "x": 383,
-              "y": 270
+              "x": 371,
+              "y": 114
             },
             "target": {
-              "x": 483,
-              "y": 370
+              "cell": "693b972e-ad4c-4551-aec3-40c01dbcf2f7",
+              "port": "ae205ca9-5f17-4b8b-a3e7-6896103f9136"
             },
             "vertices": [
               {
-                "x": 383,
-                "y": 300
+                "x": 440,
+                "y": 114
               },
               {
-                "x": 430,
-                "y": 340
-              },
-              {
-                "x": 430,
-                "y": 370
+                "x": 440,
+                "y": 214
               }
             ]
           }
@@ -851,6 +686,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "test",
-    "threatTop": 20
+    "threatTop": 24
   }
 }
